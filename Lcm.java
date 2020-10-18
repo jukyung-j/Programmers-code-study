@@ -4,7 +4,7 @@ public class Lcm {
 	public static int[] solution(int n,int m) {
 		int[] answer = {1,1};
 		for(int i = 1;i<=n;i++) {
-			if(n%i==0&&m%i==0) {	// �ִ�����
+			if(n%i==0&&m%i==0) {	// ÃÖ´ë°ø¾à¼ö
 				answer[0] *= i;
 				n /= i;
 				m /= i;
@@ -12,9 +12,10 @@ public class Lcm {
 					i=0;
 			}
 		}
-		answer[1]=answer[0]*n*m;	// �ּҰ����
+		answer[1]=answer[0]*n*m;	// ÃÖ¼Ò°ø¹è¼ö
 		return answer;
 	}
+	
 	public static void main(String[] args) {
 		int n = 8;
 		int m = 12;
