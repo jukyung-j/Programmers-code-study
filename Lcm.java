@@ -17,8 +17,8 @@ public class Lcm {
 	}
 	
 	public static void main(String[] args) {
-		int n = 8;
-		int m = 12;
+		int n = 24;
+		int m = 72;
 		
 		for(int i:solution(n,m))
 			System.out.println(i);
